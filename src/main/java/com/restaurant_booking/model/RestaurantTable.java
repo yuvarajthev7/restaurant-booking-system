@@ -3,6 +3,7 @@ package com.restaurant_booking.model;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Data
@@ -18,5 +19,6 @@ public class RestaurantTable {
     // Relationship: Many Tables -> One Restaurant
     @ManyToOne
     @JoinColumn(name = "restaurant_id") // The foreign key in the DB
+    @JsonIgnore
     private Restaurant restaurant;
 }
