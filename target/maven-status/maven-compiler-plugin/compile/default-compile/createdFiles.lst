@@ -1,5 +1,9 @@
 com/restaurant_booking/model/Restaurant.class
+com/restaurant_booking/service/RestaurantService.class
+com/restaurant_booking/MainApplication$TestController.class
 com/restaurant_booking/model/Reservation.class
 com/restaurant_booking/model/RestaurantTable.class
+com/restaurant_booking/controller/RestaurantController.class
+com/restaurant_booking/repository/RestaurantRepository.class
 com/restaurant_booking/model/User.class
 com/restaurant_booking/MainApplication.class
