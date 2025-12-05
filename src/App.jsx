@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   const fetchRestaurants = () => {
-    axios.get('http://localhost:8080/api/restaurants')
+    axios.get('https://restaurant-booking-system-v7hc.onrender.com/api/restaurants')
       .then(response => {
         const uniqueRestaurants = response.data.filter((v,i,a)=>a.findIndex(t=>(t.id === v.id))===i);
         setRestaurants(uniqueRestaurants);
@@ -39,7 +39,7 @@ function App() {
     const headers = { Authorization: token };
 
     // Test credentials
-    axios.get('http://localhost:8080/api/restaurants', { headers })
+    axios.get('https://restaurant-booking-system-v7hc.onrender.com/api/restaurants', { headers })
       .then(() => {
         setAuthHeader(headers);
         const role = govId.includes("ADMIN") ? "ADMIN" : "USER";
@@ -51,7 +51,7 @@ function App() {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8080/api/users', {
+    axios.post('https://restaurant-booking-system-v7hc.onrender.com/api/users', {
       firstName: regFirstName,
       lastName: regLastName,
       email: regEmail,
@@ -75,7 +75,7 @@ function App() {
     const time = prompt("Enter Time (YYYY-MM-DDTHH:MM:SS):", "2025-12-05T19:00:00");
     if (!time) return;
 
-    axios.post('http://localhost:8080/api/reservations', {
+    axios.post('https://restaurant-booking-system-v7hc.onrender.com/api/reservations', {
       tableId: tableId,
       reservationTime: time
     }, { headers: authHeader })
@@ -84,7 +84,7 @@ function App() {
   };
 
   const fetchReservations = () => {
-    axios.get('http://localhost:8080/api/reservations', { headers: authHeader })
+    axios.get('https://restaurant-booking-system-v7hc.onrender.com/api/reservations', { headers: authHeader })
       .then(response => setReservations(response.data))
       .catch(() => alert("Access Denied"));
   };
@@ -92,7 +92,7 @@ function App() {
   const deleteReservation = (id) => {
     if(!window.confirm("Are you sure you want to delete this reservation?")) return;
 
-    axios.delete(`http://localhost:8080/api/reservations/${id}`, { headers: authHeader })
+    axios.delete(`https://restaurant-booking-system-v7hc.onrender.com/api/reservations/${id}`, { headers: authHeader })
       .then(() => {
         alert("Reservation Deleted");
         fetchReservations(); // Refresh list
