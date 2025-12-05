@@ -1,3 +1,4 @@
+com/restaurant_booking/config/SecurityConfig.class
 com/restaurant_booking/MainApplication$TestController.class
 com/restaurant_booking/model/Reservation.class
 com/restaurant_booking/model/RestaurantTable.class
@@ -10,8 +11,10 @@ com/restaurant_booking/service/ReservationService.class
 com/restaurant_booking/controller/RestaurantController.class
 com/restaurant_booking/repository/UserRepository.class
 com/restaurant_booking/repository/ReservationRepository.class
+com/restaurant_booking/config/CorsConfig$1.class
 com/restaurant_booking/controller/UserController.class
 com/restaurant_booking/repository/RestaurantTableRepository.class
+com/restaurant_booking/config/CorsConfig.class
 com/restaurant_booking/controller/ReservationController.class
 com/restaurant_booking/model/User.class
 com/restaurant_booking/service/UserService.class

@@ -1,4 +1,6 @@
 /home/goodboicarti/Desktop/projects/restaurant-booking/src/main/java/com/restaurant_booking/MainApplication.java
+/home/goodboicarti/Desktop/projects/restaurant-booking/src/main/java/com/restaurant_booking/config/CorsConfig.java
+/home/goodboicarti/Desktop/projects/restaurant-booking/src/main/java/com/restaurant_booking/config/SecurityConfig.java
 /home/goodboicarti/Desktop/projects/restaurant-booking/src/main/java/com/restaurant_booking/controller/ReservationController.java
 /home/goodboicarti/Desktop/projects/restaurant-booking/src/main/java/com/restaurant_booking/controller/RestaurantController.java
 /home/goodboicarti/Desktop/projects/restaurant-booking/src/main/java/com/restaurant_booking/controller/UserController.java
