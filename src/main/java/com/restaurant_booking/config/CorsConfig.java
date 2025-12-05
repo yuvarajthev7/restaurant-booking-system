@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") //allow all urls
-                        .allowedOrigins("http://localhost:5173") //allow react port
+                        .allowedOrigins("https://restaurant-booking-system-main-frontend.onrender.com/") //allow react port
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS"); // Allow these actions
             }
         };
